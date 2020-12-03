@@ -34,21 +34,27 @@ class Header extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
+                          <center>
                           <CardTitle
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Traffic
+                            Strongest server
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
-                            350,897
+                            S39
                           </span>
+                          <CardTitle
+                            tag="h5"
+                            className="text-uppercase text-muted mb-0"
+                          >
+                            Total power
+                          </CardTitle>
+                          <span className="h2 font-weight-bold mb-0">
+                            Infinite
+                          </span>
+                          </center>
                         </div>
-                        <Col className="col-auto">
-                          <div className="icon icon-shape bg-danger text-white rounded-circle shadow">
-                            <i className="fas fa-chart-bar" />
-                          </div>
-                        </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-success mr-2">
