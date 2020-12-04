@@ -17,6 +17,7 @@
     "argon-dashboard",
     "argon-dashboard-react"
   ],
+  "proxy": "http://localhost:1337",
   "author": "Creative Tim",
   "license": "MIT",
   "bugs": {
