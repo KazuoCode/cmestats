@@ -1,235 +1,240 @@
 export default {
     items: [
         {
-            id: 'navigation',
-            title: 'Navigation',
+            id: 'server-pool',
+            title: 'Pool',
             type: 'group',
             icon: 'icon-navigation',
             children: [
                 {
                     id: 'dashboard',
-                    title: 'Dashboard',
+                    title: 'Overview',
                     type: 'item',
-                    url: '/dashboard/default',
+                    url: '/dashboard/pool',
                     icon: 'feather icon-home',
+                },
+                {
+                    id: 'ranking',
+                    title: 'Ranking',
+                    type: 'item',
+                    url: '/dashboard/ranking',
+                    icon: 'feather icon-bar-chart-2',
+                },
+                {
+                    id: 'events',
+                    title: 'Events',
+                    type: 'item',
+                    url: '/dashboard/events',
+                    icon: 'feather icon-star',
                 }
             ]
         },
         {
-            id: 'ui-element',
-            title: 'UI ELEMENT',
+            id: 'servers',
+            title: 'Servers',
             type: 'group',
-            icon: 'icon-ui',
+            icon: 'icon-navigation',
             children: [
                 {
-                    id: 'basic',
-                    title: 'Component',
+                    id: 's31',
+                    title: 'S31',
                     type: 'collapse',
-                    icon: 'feather icon-box',
+                    icon: 'feather icon-award',
                     children: [
                         {
-                            id: 'button',
-                            title: 'Button',
+                            id: 's31-over',
+                            title: 'Overview',
                             type: 'item',
                             url: '/basic/button'
                         },
                         {
-                            id: 'badges',
-                            title: 'Badges',
+                            id: 's31-rankings',
+                            title: 'Rankings',
                             type: 'item',
                             url: '/basic/badges'
-                        },
-                        {
-                            id: 'breadcrumb-pagination',
-                            title: 'Breadcrumb & Pagination',
-                            type: 'item',
-                            url: '/basic/breadcrumb-paging'
-                        },
-                        {
-                            id: 'collapse',
-                            title: 'Collapse',
-                            type: 'item',
-                            url: '/basic/collapse'
-                        },
-                        {
-                            id: 'tabs-pills',
-                            title: 'Tabs & Pills',
-                            type: 'item',
-                            url: '/basic/tabs-pills'
-                        },
-                        {
-                            id: 'typography',
-                            title: 'Typography',
-                            type: 'item',
-                            url: '/basic/typography'
                         }
                     ]
-                }
-            ]
-        },
-        {
-            id: 'ui-forms',
-            title: 'Forms & Tables',
-            type: 'group',
-            icon: 'icon-group',
-            children: [
-                {
-                    id: 'form-basic',
-                    title: 'Form Elements',
-                    type: 'item',
-                    url: '/forms/form-basic',
-                    icon: 'feather icon-file-text'
                 },
                 {
-                    id: 'bootstrap',
-                    title: 'Table',
-                    type: 'item',
-                    icon: 'feather icon-server',
-                    url: '/tables/bootstrap'
-                }
-            ]
-        },
-        {
-            id: 'chart-maps',
-            title: 'Chart & Maps',
-            type: 'group',
-            icon: 'icon-charts',
-            children: [
-                {
-                    id: 'charts',
-                    title: 'Charts',
-                    type: 'item',
-                    icon: 'feather icon-pie-chart',
-                    url: '/charts/nvd3'
-                },
-                {
-                    id: 'maps',
-                    title: 'Map',
-                    type: 'item',
-                    icon: 'feather icon-map',
-                    url: '/maps/google-map'
-                }
-            ]
-        },
-        {
-            id: 'pages',
-            title: 'Pages',
-            type: 'group',
-            icon: 'icon-pages',
-            children: [
-                {
-                    id: 'auth',
-                    title: 'Authentication',
+                    id: 's32',
+                    title: 'S32',
                     type: 'collapse',
-                    icon: 'feather icon-lock',
-                    badge: {
-                        title: 'New',
-                        type: 'label-danger'
-                    },
+                    icon: 'feather icon-award',
                     children: [
                         {
-                            id: 'signup-1',
-                            title: 'Sign up',
+                            id: 's32-over',
+                            title: 'Overview',
                             type: 'item',
-                            url: '/auth/signup-1',
-                            target: true,
-                            breadcrumbs: false
+                            url: '/basic/button'
                         },
                         {
-                            id: 'signin-1',
-                            title: 'Sign in',
+                            id: 's32-rankings',
+                            title: 'Rankings',
                             type: 'item',
-                            url: '/auth/signin-1',
-                            target: true,
-                            breadcrumbs: false
+                            url: '/basic/badges'
                         }
                     ]
                 },
-
                 {
-                    id: 'sample-page',
-                    title: 'Sample Page',
-                    type: 'item',
-                    url: '/sample-page',
-                    classes: 'nav-item',
-                    icon: 'feather icon-sidebar'
-                },
-                {
-                    id: 'docs',
-                    title: 'Documentation',
-                    type: 'item',
-                    url: '/docs',
-                    classes: 'nav-item',
-                    icon: 'feather icon-help-circle'
-                },
-                {
-                    id: 'menu-level',
-                    title: 'Menu Levels',
+                    id: 's33',
+                    title: 'S33',
                     type: 'collapse',
-                    icon: 'feather icon-menu',
+                    icon: 'feather icon-award',
                     children: [
                         {
-                            id: 'menu-level-1.1',
-                            title: 'Menu Level 1.1',
+                            id: 's33-over',
+                            title: 'Overview',
                             type: 'item',
-                            url: '#!',
+                            url: '/basic/button'
                         },
                         {
-                            id: 'menu-level-1.2',
-                            title: 'Menu Level 2.2',
-                            type: 'collapse',
-                            children: [
-                                {
-                                    id: 'menu-level-2.1',
-                                    title: 'Menu Level 2.1',
-                                    type: 'item',
-                                    url: '#',
-                                },
-                                {
-                                    id: 'menu-level-2.2',
-                                    title: 'Menu Level 2.2',
-                                    type: 'collapse',
-                                    children: [
-                                        {
-                                            id: 'menu-level-3.1',
-                                            title: 'Menu Level 3.1',
-                                            type: 'item',
-                                            url: '#',
-                                        },
-                                        {
-                                            id: 'menu-level-3.2',
-                                            title: 'Menu Level 3.2',
-                                            type: 'item',
-                                            url: '#',
-                                        }
-                                    ]
-                                }
-                            ]
+                            id: 's33-rankings',
+                            title: 'Rankings',
+                            type: 'item',
+                            url: '/basic/badges'
                         }
                     ]
                 },
                 {
-                    id: 'disabled-menu',
-                    title: 'Disabled Menu',
-                    type: 'item',
-                    url: '#',
-                    classes: 'nav-item disabled',
-                    icon: 'feather icon-power'
+                    id: 's34',
+                    title: 'S34',
+                    type: 'collapse',
+                    icon: 'feather icon-award',
+                    children: [
+                        {
+                            id: 's34-over',
+                            title: 'Overview',
+                            type: 'item',
+                            url: '/basic/button'
+                        },
+                        {
+                            id: 's34-rankings',
+                            title: 'Rankings',
+                            type: 'item',
+                            url: '/basic/badges'
+                        }
+                    ]
                 },
-                /*{
-                    id: 'buy-now',
-                    title: 'Buy Now',
-                    type: 'item',
-                    icon: 'feather icon-user',
-                    classes: 'nav-item',
-                    url: 'https://codedthemes.com',
-                    target: true,
-                    external: true,
-                    badge: {
-                        title: 'v1.0',
-                        type: 'label-primary'
-                    }
-                }*/
+                {
+                    id: 's35',
+                    title: 'S35',
+                    type: 'collapse',
+                    icon: 'feather icon-award',
+                    children: [
+                        {
+                            id: 's35-over',
+                            title: 'Overview',
+                            type: 'item',
+                            url: '/basic/button'
+                        },
+                        {
+                            id: 's35-rankings',
+                            title: 'Rankings',
+                            type: 'item',
+                            url: '/basic/badges'
+                        }
+                    ]
+                },
+                {
+                    id: 's36',
+                    title: 'S36',
+                    type: 'collapse',
+                    icon: 'feather icon-award',
+                    children: [
+                        {
+                            id: 's36-over',
+                            title: 'Overview',
+                            type: 'item',
+                            url: '/basic/button'
+                        },
+                        {
+                            id: 's36-rankings',
+                            title: 'Rankings',
+                            type: 'item',
+                            url: '/basic/badges'
+                        }
+                    ]
+                },
+                {
+                    id: 's37',
+                    title: 'S37',
+                    type: 'collapse',
+                    icon: 'feather icon-award',
+                    children: [
+                        {
+                            id: 's37-over',
+                            title: 'Overview',
+                            type: 'item',
+                            url: '/basic/button'
+                        },
+                        {
+                            id: 's37-rankings',
+                            title: 'Rankings',
+                            type: 'item',
+                            url: '/basic/badges'
+                        }
+                    ]
+                },
+                {
+                    id: 's38',
+                    title: 'S38',
+                    type: 'collapse',
+                    icon: 'feather icon-award',
+                    children: [
+                        {
+                            id: 's38-over',
+                            title: 'Overview',
+                            type: 'item',
+                            url: '/basic/button'
+                        },
+                        {
+                            id: 's38-rankings',
+                            title: 'Rankings',
+                            type: 'item',
+                            url: '/basic/badges'
+                        }
+                    ]
+                },
+                {
+                    id: 's39',
+                    title: 'S39',
+                    type: 'collapse',
+                    icon: 'feather icon-award',
+                    children: [
+                        {
+                            id: 's39-over',
+                            title: 'Overview',
+                            type: 'item',
+                            url: '/basic/button'
+                        },
+                        {
+                            id: 's39-rankings',
+                            title: 'Rankings',
+                            type: 'item',
+                            url: '/basic/badges'
+                        }
+                    ]
+                },
+                {
+                    id: 's40',
+                    title: 'S40',
+                    type: 'collapse',
+                    icon: 'feather icon-award',
+                    children: [
+                        {
+                            id: 's40-over',
+                            title: 'Overview',
+                            type: 'item',
+                            url: '/basic/button'
+                        },
+                        {
+                            id: 's40-rankings',
+                            title: 'Rankings',
+                            type: 'item',
+                            url: '/basic/badges'
+                        }
+                    ]
+                }
             ]
         }
     ]
