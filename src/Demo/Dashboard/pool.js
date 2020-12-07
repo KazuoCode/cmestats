@@ -20,16 +20,28 @@ class Dashboard extends React.Component {
         var theme_g1 = bar.createLinearGradient(0, 0, 500, 0);
         theme_g1.addColorStop(0, 'rgba(29, 233, 182, 0.8)');
         theme_g1.addColorStop(1, 'rgba(29, 196, 233, 0.8)');
+        var theme_g2 = bar.createLinearGradient(0, 0, 500, 0);
+        theme_g2.addColorStop(0, "rgba(255, 0, 100, 0.8)")
+        theme_g2.addColorStop(1, "rgba(100, 0, 200, 0.8)")
         var data1 = {
             labels: [0, 1, 2, 3, 4, 5, 6],
             datasets: [{
-                label: "D1",
-                data: [85, 55, 70, 50, 75, 45, 60],
+                label: "UE39",
+                data: [50, 55, 60, 70, 75, 80, 85],
                 borderWidth: 1,
                 borderColor: theme_g1,
                 backgroundColor: theme_g1,
                 hoverborderColor: theme_g1,
                 hoverBackgroundColor: theme_g1,
+                fill: 'origin',
+            },{
+                label: "UE31",
+                data: [40, 50, 55, 60, 65, 70, 75],
+                borderWidth: 1,
+                borderColor: theme_g2,
+                backgroundColor: theme_g2,
+                hoverborderColor: theme_g2,
+                hoverBackgroundColor: theme_g2,
                 fill: 'origin',
             }]
         };
@@ -88,9 +100,9 @@ class Dashboard extends React.Component {
                         </Col>
                     </Row>
                 </Container>
-                <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-                    <Tab eventKey="power" title="Power">
-
+                <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" active>
+                    <Tab eventKey="power" title="Power" style={{height: "25vh"}} active>
+                        <canvas id="chart-area" style={{ width: "100%", height: "100%" }} ref={this.chartRef}></canvas>
                     </Tab>
                     <Tab eventKey="intimacy" title="Intimacy">
 
@@ -99,13 +111,6 @@ class Dashboard extends React.Component {
 
                     </Tab>
                 </Tabs>
-                <Container>
-                    <Card>
-                        <Card.Body>
-                            <canvas id="chart-area" style={{ width: "100%", height: "100%" }} ref={this.chartRef}></canvas>
-                        </Card.Body>
-                    </Card>
-                </Container>
             </Aux >
         );
     }
