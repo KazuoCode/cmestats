@@ -73,6 +73,7 @@ class Dashboard extends React.Component {
             }
         });
     }
+
     intimacyGraph() {
         const bar = this.intimacyRef.current.getContext("2d");
 
@@ -114,6 +115,7 @@ class Dashboard extends React.Component {
             }
         });
     }
+
     growthGraph() {
         const bar = this.growthRef.current.getContext("2d");
 
@@ -156,12 +158,15 @@ class Dashboard extends React.Component {
         });
     }
 
+    loadOverview() {
+        fetch('/servers/pool/overview').then(res => res.json()).then(data => {
+            this.setState(data);
+        });
+    }
 
 
     componentDidMount() {
-        this.powerGraph();
-        this.intimacyGraph();
-        this.growthGraph();
+        this.loadOverview();
     }
 
     render() {
